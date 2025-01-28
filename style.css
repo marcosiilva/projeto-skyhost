@@ -1,0 +1,143 @@
+:root {
+    --cor-primary: #0e1218;
+    --cor-header: #05080a;
+    --cor--produtos: #1f262c;
+    --letras: #fff;
+    --cor-secondary: #ad1bda;
+    --cor--letras-cards: #b5b5b5;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--cor-primary);
+    color: var(--letras);
+    width: 90%;
+    max-width: 960px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-title {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
+}
+
+.header {
+    display: flex;
+    background-color: var(--cor-header);
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+.header__logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    letter-spacing: 2px;
+}
+
+.header__nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    gap: 16px;
+}
+
+.header__nav a {
+    padding: 12px;
+    color: var(--letras);
+    text-decoration: none;
+    
+}
+
+.header__nav a:hover {
+    text-decoration: underline;
+}
+
+a.header__nav--active {
+    background-color: var(--cor-secondary);
+    border-radius: 15px;
+    color: #0c1014;
+    /* pointer-events: none; */
+}
+
+.pricing {
+    display: flex;
+    gap: 16px;
+}
+
+.pricing-plan {
+    flex: 1;
+    background-color: var(--cor--produtos);
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 12px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-plan:hover {
+    outline: 1px solid var(--cor-secondary);
+    background-color: var(--cor--produtos);
+}
+
+.pricing-plan__title {
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--cor-secondary);
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
+.pricing-plan p {
+    margin-top: 0;
+}
+
+.pricing-plan__price {
+    font-size: 34px;
+}
+
+.pricing-plan__features {
+    margin: 0 0 35px;
+    padding: 16px;
+    line-height: 1.85;
+    color: var(--cor--letras-cards);
+    flex: 1;
+}
+
+.pricing-plan__features li::marker {
+    color: var(--cor-secondary)
+}
+
+.pricing-plan__cta {
+    text-decoration: none;
+    color: black;
+    background-color: var(--cor-secondary);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+}
+
+.pricing-plan__cta:hover {
+    /* outline: 2px solid var(--cor-secondary); */
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.footer__content {
+    margin: 22px 0 22px;
+}
+
+.footer__content a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+
+
